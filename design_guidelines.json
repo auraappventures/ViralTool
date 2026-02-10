@@ -1,0 +1,190 @@
+{
+  "project_name": "Social Media Content Creator",
+  "design_philosophy": {
+    "persona": "E1: The Anti-AI Designer",
+    "core_principles": [
+      "Fusion over Imitation: Mix SaaS precision with Lifestyle warmth.",
+      "Emotion First: The app should feel 'creative' and 'energetic', not bureaucratic.",
+      "Content is King: The script text is the hero. Typography must be impeccable.",
+      "Negative Space: Use generous padding (p-8+) to let the content breathe."
+    ],
+    "anti_patterns": [
+      "No default blue/gray SaaS look.",
+      "No generic 'Inter' for headings.",
+      "No dense, spreadsheet-like tables without breathing room."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight leading-none",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed text-slate-600",
+      "caption": "text-sm text-slate-500 uppercase tracking-widest"
+    },
+    "weights": {
+      "heading_bold": "700",
+      "heading_medium": "500",
+      "body_regular": "400"
+    }
+  },
+  "colors": {
+    "theme": "light",
+    "palette": {
+      "primary": {
+        "DEFAULT": "#FF7870",
+        "foreground": "#FFFFFF",
+        "hover": "#E66A63",
+        "light": "#FFF0F0"
+      },
+      "secondary": {
+        "DEFAULT": "#0F172A",
+        "foreground": "#FFFFFF",
+        "muted": "#334155"
+      },
+      "background": {
+        "page": "#FFF5F5",
+        "card": "#FFFFFF",
+        "subtle": "#F8FAFC"
+      },
+      "accent": {
+        "pink": "#FF7870",
+        "teal": "#2DD4BF",
+        "gradient_start": "#FF9A9E",
+        "gradient_end": "#FECFEF"
+      },
+      "text": {
+        "primary": "#0F172A",
+        "secondary": "#64748B",
+        "muted": "#94A3B8"
+      },
+      "border": {
+        "DEFAULT": "#E2E8F0",
+        "active": "#FF7870"
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444"
+      }
+    },
+    "gradients": {
+      "header": "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
+      "primary_action": "linear-gradient(90deg, #FF7870 0%, #FF9A9E 100%)",
+      "subtle_bg": "radial-gradient(circle at 50% 0%, #FFF5F5 0%, #FFFFFF 100%)"
+    }
+  },
+  "layout_strategies": {
+    "container": {
+      "max_width": "max-w-7xl",
+      "padding": "px-4 md:px-8",
+      "center": "mx-auto"
+    },
+    "spacing": {
+      "section_gap": "gap-8 md:gap-12",
+      "item_gap": "gap-4",
+      "internal_padding": "p-6 md:p-8"
+    },
+    "grid_system": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-8",
+      "cards": "grid grid-cols-1 md:grid-cols-3 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#FF7870] hover:bg-[#E66A63] text-white rounded-full px-8 py-3 font-semibold shadow-lg shadow-pink-200 transition-all hover:-translate-y-0.5",
+      "secondary": "bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 hover:text-slate-900 rounded-full px-6 py-3 font-medium transition-all",
+      "ghost": "text-slate-500 hover:text-[#FF7870] hover:bg-pink-50 rounded-lg px-4 py-2 font-medium transition-colors"
+    },
+    "inputs": {
+      "base": "rounded-xl border-slate-200 bg-white px-4 py-3 text-sm focus:border-[#FF7870] focus:ring-4 focus:ring-pink-100 transition-all outline-none placeholder:text-slate-400",
+      "textarea": "min-h-[120px] resize-none"
+    },
+    "cards": {
+      "base": "bg-white rounded-2xl border border-slate-100 shadow-xl shadow-slate-200/50 p-6 md:p-8 hover:shadow-2xl hover:shadow-slate-200/60 transition-all duration-300",
+      "interactive": "cursor-pointer hover:border-[#FF7870]/30 hover:ring-2 hover:ring-[#FF7870]/10"
+    },
+    "stepper": {
+      "container": "flex items-center justify-between w-full max-w-3xl mx-auto mb-12",
+      "step_active": "bg-[#FF7870] text-white ring-4 ring-pink-100",
+      "step_completed": "bg-emerald-500 text-white",
+      "step_inactive": "bg-white border-2 border-slate-200 text-slate-400"
+    },
+    "tables": {
+      "container": "w-full overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm",
+      "header": "bg-slate-50 border-b border-slate-100 text-xs font-bold text-slate-500 uppercase tracking-wider",
+      "row": "hover:bg-pink-50/30 transition-colors border-b border-slate-50 last:border-0",
+      "cell": "px-6 py-4 text-sm text-slate-700"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "transitions": {
+      "page_enter": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 },
+        "transition": { "duration": 0.4, "ease": "easeOut" }
+      },
+      "stagger_children": {
+        "variants": {
+          "visible": { "transition": { "staggerChildren": 0.1 } }
+        }
+      },
+      "hover_lift": {
+        "whileHover": { "y": -4 },
+        "transition": { "type": "spring", "stiffness": 300 }
+      }
+    }
+  },
+  "assets": {
+    "icons_library": "lucide-react",
+    "image_urls": {
+      "visual_styles": [
+        {
+          "url": "https://images.unsplash.com/photo-1632287048491-d718911305d1?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "category": "Personal Brand",
+          "description": "Minimalist portrait"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1616397325279-e7bb752d0e28?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "category": "Architectural",
+          "description": "Clean lines, professional"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1562698016-6a24b99e0653?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "category": "Minimalist",
+          "description": "White space dominant"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1672412420005-a576c84afab2?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "category": "Nature",
+          "description": "Calm, organic"
+        }
+      ]
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Ensure 'Manrope' font is imported in index.css from Google Fonts.",
+    "2. UI POLISH: Use the 'cards.base' style for all main content containers. Do not use raw divs.",
+    "3. STEPPER: Implement a custom Stepper component that sits at the top of the Wizard. It must strictly follow the active/completed states defined in 'colors'.",
+    "4. TABLES: For the Scripts Selection step, use a table layout. Ensure the 'Notes' column has a text input (Shadcn Input or Textarea) that feels integrated.",
+    "5. TABS: Use a custom Tab component (pill shaped) for switching between Hook categories. Do not use the default browser tabs look.",
+    "6. ACCESSIBILITY: Ensure all text on the light pink background has sufficient contrast (use Slate-900 for main text).",
+    "7. TESTING: Add 'data-testid' to all interactive elements (buttons, inputs, tabs, checkboxes).",
+    "8. MOCK DATA: Use the provided image URLs for the 'Visual Style' step. Create a dummy list of scripts for the 'Script Selection' step."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for dark colors.",
+    "Do not center align the app container.",
+    "Use layered shadows for depth.",
+    "Every interaction needs micro-animations (hover, focus, active).",
+    "Use 2-3x more spacing than typical designs."
+  ]
+}

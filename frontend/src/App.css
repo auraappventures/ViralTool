@@ -1,0 +1,129 @@
+.App {
+  text-align: left;
+}
+
+/* Smooth transitions for all interactive elements */
+button, input, textarea, select, a {
+  transition: all 0.2s ease;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Table row hover */
+.table-row-hover:hover {
+  background-color: rgba(255, 120, 112, 0.05);
+}
+
+/* Custom checkbox styling */
+[data-state="checked"] {
+  background-color: #0F172A !important;
+  border-color: #0F172A !important;
+}
+
+/* Stepper connector line */
+.stepper-connector {
+  height: 2px;
+  background: linear-gradient(90deg, #E2E8F0 0%, #E2E8F0 100%);
+  flex-grow: 1;
+  margin: 0 8px;
+}
+
+.stepper-connector.completed {
+  background: linear-gradient(90deg, #0F172A 0%, #0F172A 100%);
+}
+
+/* Progress indicator */
+.progress-ring {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+/* Tab active indicator */
+.tab-active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #FF7870;
+  border-radius: 1px;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #FF7870 0%, #FF9A9E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Selection bar animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.selection-bar {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Image preview hover */
+.image-preview {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.image-preview:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+/* Pill button */
+.pill-btn {
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.pill-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Content fade */
+.content-fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.content-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.content-fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content-fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
