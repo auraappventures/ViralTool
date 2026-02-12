@@ -1,0 +1,158 @@
+{
+  "_comment": "Gen Z Slang translations for content - keep English terms that work internationally",
+  "common_phrases": {
+    "spilling the tea": {
+      "de": "plaudere Insider-Wissen aus",
+      "es": "contando los secretos",
+      "fr": "je révèle les secrets",
+      "pt": "contando os segredos",
+      "ru": "раскрываю секреты",
+      "ko": "남들 모르는 얘기 해줄게",
+      "ja": "裏話を暴露する"
+    },
+    "situationship": {
+      "de": "Situationship",
+      "es": "situationship",
+      "fr": "situationship",
+      "pt": "situationship",
+      "ru": "ситуэйшеншип",
+      "ko": "상황관계",
+      "ja": "シチュエーションシップ"
+    },
+    "post and ghost": {
+      "de": "posten und ghosten",
+      "es": "postear y desaparecer",
+      "fr": "poster et disparaître",
+      "pt": "postar e sumir",
+      "ru": "постить и пропадать",
+      "ko": "올리고 사라지기",
+      "ja": "投稿してゴースト"
+    },
+    "blow up": {
+      "de": "viral gehen",
+      "es": "volverse viral",
+      "fr": "devenir viral",
+      "pt": "viralizar",
+      "ru": "стать вирусным",
+      "ko": "바이럴 되다",
+      "ja": "バズる"
+    },
+    "no cap": {
+      "de": "ernsthaft",
+      "es": "en serio",
+      "fr": "sérieusement",
+      "pt": "sério",
+      "ru": "без шуток",
+      "ko": "진짜로",
+      "ja": "マジで"
+    },
+    "main character energy": {
+      "de": "Main Character Energy",
+      "es": "main character energy",
+      "fr": "main character energy",
+      "pt": "main character energy",
+      "ru": "энергия главного героя",
+      "ko": "주인공 에너지",
+      "ja": "主役オーラ"
+    },
+    "living rent free": {
+      "de": "geht mir nicht aus dem Kopf",
+      "es": "no puedo dejar de pensar en",
+      "fr": "je n'arrive pas à oublier",
+      "pt": "não consigo parar de pensar",
+      "ru": "не выходит из головы",
+      "ko": "머리에서 안 떠나",
+      "ja": "頭から離れない"
+    },
+    "it's giving": {
+      "de": "es hat so",
+      "es": "tiene vibes de",
+      "fr": "ça donne des vibes",
+      "pt": "tá com vibes de",
+      "ru": "это даёт вайбы",
+      "ko": "분위기가",
+      "ja": "〜な感じ"
+    },
+    "understood the assignment": {
+      "de": "hat die Aufgabe verstanden",
+      "es": "entendió la tarea",
+      "fr": "a compris la mission",
+      "pt": "entendeu a tarefa",
+      "ru": "понял задание",
+      "ko": "미션 완료",
+      "ja": "要件を理解した"
+    },
+    "sliding into DMs": {
+      "de": "in die DMs rutschen",
+      "es": "entrar al DM",
+      "fr": "glisser dans les DMs",
+      "pt": "mandar DM",
+      "ru": "написать в личку",
+      "ko": "DM으로 슬라이딩",
+      "ja": "DMに入り込む"
+    },
+    "growth strategy": {
+      "de": "Wachstumsstrategie",
+      "es": "estrategia de crecimiento",
+      "fr": "stratégie de croissance",
+      "pt": "estratégia de crescimento",
+      "ru": "стратегия роста",
+      "ko": "성장 전략",
+      "ja": "成長戦略"
+    },
+    "algorithm": {
+      "de": "Algorithmus",
+      "es": "algoritmo",
+      "fr": "algorithme",
+      "pt": "algoritmo",
+      "ru": "алгоритм",
+      "ko": "알고리즘",
+      "ja": "アルゴリズム"
+    },
+    "engagement": {
+      "de": "Engagement",
+      "es": "interacción",
+      "fr": "engagement",
+      "pt": "engajamento",
+      "ru": "вовлечённость",
+      "ko": "참여도",
+      "ja": "エンゲージメント"
+    },
+    "viral": {
+      "de": "viral",
+      "es": "viral",
+      "fr": "viral",
+      "pt": "viral",
+      "ru": "вирусный",
+      "ko": "바이럴",
+      "ja": "バイラル"
+    },
+    "content creator": {
+      "de": "Creator",
+      "es": "creador de contenido",
+      "fr": "créateur de contenu",
+      "pt": "criador de conteúdo",
+      "ru": "креатор",
+      "ko": "크리에이터",
+      "ja": "クリエイター"
+    },
+    "views": {
+      "de": "Views",
+      "es": "vistas",
+      "fr": "vues",
+      "pt": "visualizações",
+      "ru": "просмотры",
+      "ko": "조회수",
+      "ja": "再生数"
+    },
+    "followers": {
+      "de": "Follower",
+      "es": "seguidores",
+      "fr": "abonnés",
+      "pt": "seguidores",
+      "ru": "подписчики",
+      "ko": "팔로워",
+      "ja": "フォロワー"
+    }
+  }
+}
