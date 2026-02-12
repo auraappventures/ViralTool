@@ -127,3 +127,67 @@ button, input, textarea, select, a {
   transform: translateY(-20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+/* Line clamp utilities */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 640px) {
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+  
+  /* Ensure inputs don't zoom on iOS */
+  input, textarea, select {
+    font-size: 16px;
+  }
+}
+
+/* Active state for touch devices */
+@media (hover: none) {
+  .active\:scale-\[0\.98\]:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Safe area padding for iOS devices with notches */
+.safe-area-pb {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.safe-area-pt {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* Prevent horizontal overflow on mobile */
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Improve scrolling on iOS */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Better focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #FF7870;
+  outline-offset: 2px;
+}
