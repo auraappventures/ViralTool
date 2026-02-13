@@ -1,11 +1,18 @@
 import { useState, useEffect } from "react";
 import "@/App.css";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, ChevronRight, LogOut, Copy, ArrowLeft, ArrowRight, X } from "lucide-react";
+import { Check, ChevronRight, LogOut, Copy, ArrowLeft, ArrowRight, X, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Toaster, toast } from "sonner";
 import contentData from "@/data/contentData.json";
+import contentDataDe from "@/data/contentDataDe.json";
+import contentDataEs from "@/data/contentDataEs.json";
+import contentDataFr from "@/data/contentDataFr.json";
+import contentDataJp from "@/data/contentDataJp.json";
+import contentDataKr from "@/data/contentDataKr.json";
+import contentDataPt from "@/data/contentDataPt.json";
+import contentDataRu from "@/data/contentDataRu.json";
 
 // Image Lightbox Component
 const ImageLightbox = ({ images, onClose }) => {
@@ -882,34 +889,122 @@ const ScriptStep = ({ scripts, selectedScripts, onSelect, currentScriptIndex, se
   );
 };
 
-// Summary Step - Improved Layout
+// Language mapping
+const languageData = {
+  en: { data: contentData, label: 'English' },
+  de: { data: contentDataDe, label: 'Deutsch' },
+  es: { data: contentDataEs, label: 'Español' },
+  fr: { data: contentDataFr, label: 'Français' },
+  jp: { data: contentDataJp, label: '日本語' },
+  kr: { data: contentDataKr, label: '한국어' },
+  pt: { data: contentDataPt, label: 'Português' },
+  ru: { data: contentDataRu, label: 'Русский' }
+};
+
+// Summary Step - Improved Layout with Translation
 const SummaryStep = ({ selectedStyle, selectedHook, selectedScripts, onBackToEdit, onImageClick }) => {
+  const [selectedLanguage, setSelectedLanguage] = useState('en');
+  const [showLangDropdown, setShowLangDropdown] = useState(false);
+
+  // Get translated content
+  const getTranslatedContent = () => {
+    const data = languageData[selectedLanguage].data;
+    
+    // Find translated style
+    const translatedStyle = selectedStyle ? 
+      data.visualStyles.find(s => s.id === selectedStyle.id) : null;
+    
+    // Find translated hook
+    const translatedHook = selectedHook ? 
+      data.hooks.find(h => h.id === selectedHook.id) : null;
+    
+    // Find translated scripts
+    const translatedScripts = selectedScripts.map(script => {
+      if (!script) return null;
+      return data.scripts.find(s => s.id === script.id) || script;
+    });
+    
+    return { translatedStyle, translatedHook, translatedScripts };
+  };
+
+  const { translatedStyle, translatedHook, translatedScripts } = getTranslatedContent();
+
+  // Use translated content if available, otherwise fallback to original
+  const displayStyle = translatedStyle || selectedStyle;
+  const displayHook = translatedHook || selectedHook;
+  const displayScripts = translatedScripts.map((t, i) => t || selectedScripts[i]);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
     >
-      <h2 className="text-lg md:text-2xl font-bold text-center mb-2 text-[#0F172A] px-2">Content Summary</h2>
-      <p className="text-slate-500 text-center mb-4 md:mb-8 text-sm md:text-base px-4">Review your selections and copy each item for your content creation</p>
+      <div className="flex items-center justify-between mb-4 px-2">
+        <div className="flex-1" />
+        <div>
+          <h2 className="text-lg md:text-2xl font-bold text-center text-[#0F172A]">Content Summary</h2>
+          <p className="text-slate-500 text-center text-sm md:text-base">Review your selections and copy each item</p>
+        </div>
+        <div className="flex-1 flex justify-end">
+          {/* Language Selector */}
+          <div className="relative">
+            <button
+              onClick={() => setShowLangDropdown(!showLangDropdown)}
+              className="flex items-center gap-2 px-3 py-2 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors text-sm font-medium text-[#0F172A]"
+              data-testid="language-selector"
+            >
+              <Languages className="w-4 h-4 text-[#FF7870]" />
+              <span>{languageData[selectedLanguage].label}</span>
+              <ChevronRight className={`w-4 h-4 transition-transform ${showLangDropdown ? 'rotate-90' : ''}`} />
+            </button>
+            
+            {showLangDropdown && (
+              <>
+                <div 
+                  className="fixed inset-0 z-40" 
+                  onClick={() => setShowLangDropdown(false)}
+                />
+                <div className="absolute right-0 top-full mt-2 w-40 bg-white rounded-xl border border-slate-100 shadow-xl z-50 overflow-hidden">
+                  {Object.entries(languageData).map(([code, { label }]) => (
+                    <button
+                      key={code}
+                      onClick={() => {
+                        setSelectedLanguage(code);
+                        setShowLangDropdown(false);
+                        toast.success(`Language changed to ${label}`);
+                      }}
+                      className={`w-full text-left px-4 py-2.5 text-sm hover:bg-slate-50 transition-colors ${
+                        selectedLanguage === code ? 'bg-pink-50 text-[#FF7870] font-medium' : 'text-[#0F172A]'
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
       
       <div className="space-y-3 sm:space-y-4 md:space-y-6">
         {/* Visual Style Summary */}
         <div className="bg-white rounded-xl md:rounded-2xl border border-slate-100 shadow-lg p-3 sm:p-4 md:p-6">
           <h3 className="text-[10px] sm:text-xs md:text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2 sm:mb-3 md:mb-4">Visual Style</h3>
-          {selectedStyle ? (
+          {displayStyle ? (
             <div>
-              <p className="font-semibold text-[#0F172A] mb-2 md:mb-3 text-sm md:text-base">{selectedStyle.title}</p>
+              <p className="font-semibold text-[#0F172A] mb-2 md:mb-3 text-sm md:text-base">{displayStyle.title}</p>
               <div className="flex gap-2 md:gap-3 flex-wrap">
-                {selectedStyle.images.map((img, idx) => (
+                {displayStyle.images.map((img, idx) => (
                   <img
                     key={idx}
                     src={img}
-                    alt={`${selectedStyle.title} preview ${idx + 1}`}
+                    alt={`${displayStyle.title} preview ${idx + 1}`}
                     className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 object-cover rounded-lg border border-slate-200 cursor-zoom-in hover:border-[#FF7870] hover:shadow-md transition-all"
-                    onClick={() => onImageClick(selectedStyle.images.map((imgUrl, i) => ({ 
+                    onClick={() => onImageClick(displayStyle.images.map((imgUrl, i) => ({ 
                       src: imgUrl, 
-                      alt: `${selectedStyle.title} preview ${i + 1}` 
+                      alt: `${displayStyle.title} preview ${i + 1}` 
                     })))}
                   />
                 ))}
@@ -923,10 +1018,10 @@ const SummaryStep = ({ selectedStyle, selectedHook, selectedScripts, onBackToEdi
         {/* Hook Summary */}
         <div className="bg-white rounded-xl md:rounded-2xl border border-slate-100 shadow-lg p-3 sm:p-4 md:p-6">
           <h3 className="text-[10px] sm:text-xs md:text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2 sm:mb-3 md:mb-4">Hook</h3>
-          {selectedHook ? (
+          {displayHook ? (
             <div className="flex items-start justify-between gap-2 md:gap-4">
-              <p className="text-[#0F172A] flex-1 text-sm md:text-base">{selectedHook.idea}</p>
-              <CopyButton text={selectedHook.idea} label="Hook" />
+              <p className="text-[#0F172A] flex-1 text-sm md:text-base">{displayHook.idea}</p>
+              <CopyButton text={displayHook.idea} label="Hook" />
             </div>
           ) : (
             <p className="text-slate-400 text-sm">No hook selected</p>
@@ -937,7 +1032,7 @@ const SummaryStep = ({ selectedStyle, selectedHook, selectedScripts, onBackToEdi
         <div className="bg-white rounded-xl md:rounded-2xl border border-slate-100 shadow-lg p-3 sm:p-4 md:p-6">
           <h3 className="text-[10px] sm:text-xs md:text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3 sm:mb-4 md:mb-6">Scripts</h3>
           <div className="space-y-3 sm:space-y-4 md:space-y-6">
-            {selectedScripts.map((script, idx) => (
+            {displayScripts.map((script, idx) => (
               <div key={idx} className="border border-slate-100 rounded-lg md:rounded-xl p-2.5 sm:p-3 md:p-5">
                 <div className="flex items-center gap-2 md:gap-3 mb-2 sm:mb-3 md:mb-4">
                   <span className="text-sm sm:text-base md:text-lg font-bold text-[#0F172A]">Script {idx + 1}</span>
