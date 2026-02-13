@@ -892,13 +892,13 @@ const ScriptStep = ({ scripts, selectedScripts, onSelect, currentScriptIndex, se
 // Language mapping
 const languageData = {
   en: { data: contentData, label: 'English' },
-  de: { data: contentDataDe, label: 'Deutsch' },
-  es: { data: contentDataEs, label: 'Español' },
-  fr: { data: contentDataFr, label: 'Français' },
-  jp: { data: contentDataJp, label: '日本語' },
-  kr: { data: contentDataKr, label: '한국어' },
-  pt: { data: contentDataPt, label: 'Português' },
-  ru: { data: contentDataRu, label: 'Русский' }
+  de: { data: contentDataDe, label: 'German' },
+  es: { data: contentDataEs, label: 'Spanish' },
+  fr: { data: contentDataFr, label: 'French' },
+  jp: { data: contentDataJp, label: 'Japanese' },
+  kr: { data: contentDataKr, label: 'Korean' },
+  pt: { data: contentDataPt, label: 'Portuguese' },
+  ru: { data: contentDataRu, label: 'Russian' }
 };
 
 // Summary Step - Improved Layout with Translation
