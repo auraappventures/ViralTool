@@ -4,7 +4,7 @@
       "id": "vs1",
       "title": "Weißer Titel + weißer Absatz:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1207.jpg&x=3600&y=2338&a=true"
+        "/images/vs1-white-title-white-paragraph.png"
       ],
       "info": "Wenn Sie den Strichtext anstelle des weißen Hintergrundtexts verwenden, müssen Sie sicherstellen, dass Ihre Bilder für diesen Stil geeignet sind.\nEs ist wichtig, dass der Text gut lesbar ist. Sie sollten daher nur Bilder verwenden, in denen es einen einfachen Bereich gibt, in dem nicht zu viel los ist, und den Strichtext direkt auf diesem Bereich platzieren."
     },
@@ -12,7 +12,7 @@
       "id": "vs2",
       "title": "Weißer Titel + Strichabsatz:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1208.jpg&x=3600&y=2338&a=true"
+        "/images/vs2-white-title-stroke-paragraph.png"
       ],
       "info": null
     },
@@ -20,8 +20,8 @@
       "id": "vs3",
       "title": "Verschiedene Emojis nach jedem Titel:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1213.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1214.PNG&x=3600&y=2338&a=true"
+        "/images/vs3-different-emojis-1.png",
+        "/images/vs3-different-emojis-2.png"
       ],
       "info": null
     },
@@ -29,8 +29,8 @@
       "id": "vs4",
       "title": "Nummerierungsstil (:)",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1219.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1220.PNG&x=3600&y=2338&a=true"
+        "/images/vs4-numbering-colon-1.png",
+        "/images/vs4-numbering-colon-2.png"
       ],
       "info": null
     },
@@ -38,7 +38,7 @@
       "id": "vs5",
       "title": "Farbiger Titel + weißer Absatz",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1209.PNG&x=3600&y=2338&a=true"
+        "/images/vs5-colored-title-white-paragraph.png"
       ],
       "info": "Sie können auch andere Farben als Rosa ausprobieren. Achten Sie jedoch darauf, dass Sie in derselben Diashow nicht die Farben wechseln"
     },
@@ -46,8 +46,8 @@
       "id": "vs6",
       "title": "Gleiches Emoji nach jedem Titel:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1211.jpg&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1212.PNG&x=3600&y=2338&a=true"
+        "/images/vs6-same-emoji-1.png",
+        "/images/vs6-same-emoji-2.png"
       ],
       "info": null
     },
@@ -55,8 +55,8 @@
       "id": "vs7",
       "title": "Apple Notes App-Stil",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1223.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1224.PNG&x=3600&y=2338&a=true"
+        "/images/vs7-apple-notes-1.png",
+        "/images/vs7-apple-notes-2.png"
       ],
       "info": "Normalerweise besteht dieses Format nur aus 2 Folien, Hook + Screenshot der Liste, die in der Apple Notes App erstellt wurde"
     },
@@ -64,7 +64,7 @@
       "id": "vs8",
       "title": "Strichtitel + weißer Absatz:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1210.jpg&x=3600&y=2338&a=true"
+        "/images/vs8-stroke-title-white-paragraph.png"
       ],
       "info": null
     },
@@ -72,8 +72,8 @@
       "id": "vs9",
       "title": "Nummerierungsstil (-)",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1217.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1218.PNG&x=3600&y=2338&a=true"
+        "/images/vs9-numbering-dash-1.png",
+        "/images/vs9-numbering-dash-2.png"
       ],
       "info": null
     },
@@ -81,8 +81,8 @@
       "id": "vs10",
       "title": "Nummerierungsstil (Emoji)",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1221.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1222.PNG&x=3600&y=2338&a=true"
+        "/images/vs10-numbering-emoji-1.png",
+        "/images/vs10-numbering-emoji-2.png"
       ],
       "info": null
     },
@@ -90,8 +90,8 @@
       "id": "vs11",
       "title": "Fehler mit rotem Titel:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1225.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1226.PNG&x=3600&y=2338&a=true"
+        "/images/vs11-mistakes-red-title-1.png",
+        "/images/vs11-mistakes-red-title-2.png"
       ],
       "info": null
     },
@@ -99,8 +99,8 @@
       "id": "vs12",
       "title": "Fehler mit X-Emoji:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1225.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1227.PNG&x=3600&y=2338&a=true"
+        "/images/vs12-mistakes-x-emoji-1.png",
+        "/images/vs12-mistakes-x-emoji-2.png"
       ],
       "info": null
     }

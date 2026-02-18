@@ -4,7 +4,7 @@
       "id": "vs1",
       "title": "白いタイトル + 白い段落:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1207.jpg&x=3600&y=2338&a=true"
+        "/images/vs1-white-title-white-paragraph.png"
       ],
       "info": "白い背景のテキストの代わりにストローク テキストを使用する場合は、画像がそのスタイルに適していることを確認する必要があります。\nテキストが読みやすいことが重要であるため、あまり多くのことが行われていない無地の領域がある画像のみを使用し、ストローク テキストをその領域に直接配置する必要があります。"
     },
@@ -12,7 +12,7 @@
       "id": "vs2",
       "title": "白いタイトル + ストロークの段落:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1208.jpg&x=3600&y=2338&a=true"
+        "/images/vs2-white-title-stroke-paragraph.png"
       ],
       "info": null
     },
@@ -20,8 +20,8 @@
       "id": "vs3",
       "title": "各タイトルの後に異なる絵文字:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1213.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1214.PNG&x=3600&y=2338&a=true"
+        "/images/vs3-different-emojis-1.png",
+        "/images/vs3-different-emojis-2.png"
       ],
       "info": null
     },
@@ -29,8 +29,8 @@
       "id": "vs4",
       "title": "番号付けスタイル (:)",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1219.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1220.PNG&x=3600&y=2338&a=true"
+        "/images/vs4-numbering-colon-1.png",
+        "/images/vs4-numbering-colon-2.png"
       ],
       "info": null
     },
@@ -38,7 +38,7 @@
       "id": "vs5",
       "title": "色付きのタイトル + 白い段落",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1209.PNG&x=3600&y=2338&a=true"
+        "/images/vs5-colored-title-white-paragraph.png"
       ],
       "info": "ピンク以外の色も試すことができます。ただし、同じスライドショー内で色を切り替えないように注意してください。"
     },
@@ -46,8 +46,8 @@
       "id": "vs6",
       "title": "各タイトルの後に同じ絵文字:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1211.jpg&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1212.PNG&x=3600&y=2338&a=true"
+        "/images/vs6-same-emoji-1.png",
+        "/images/vs6-same-emoji-2.png"
       ],
       "info": null
     },
@@ -55,8 +55,8 @@
       "id": "vs7",
       "title": "Apple Notes アプリのスタイル",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1223.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1224.PNG&x=3600&y=2338&a=true"
+        "/images/vs7-apple-notes-1.png",
+        "/images/vs7-apple-notes-2.png"
       ],
       "info": "通常、この形式は 2 つのスライド、フック + Apple ノート アプリで取得したリストのスクリーンショットだけです。"
     },
@@ -64,7 +64,7 @@
       "id": "vs8",
       "title": "タイトルのストローク + 白い段落:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1210.jpg&x=3600&y=2338&a=true"
+        "/images/vs8-stroke-title-white-paragraph.png"
       ],
       "info": null
     },
@@ -72,8 +72,8 @@
       "id": "vs9",
       "title": "番号付けスタイル (-)",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1217.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1218.PNG&x=3600&y=2338&a=true"
+        "/images/vs9-numbering-dash-1.png",
+        "/images/vs9-numbering-dash-2.png"
       ],
       "info": null
     },
@@ -81,8 +81,8 @@
       "id": "vs10",
       "title": "番号付けスタイル (絵文字)",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1221.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1222.PNG&x=3600&y=2338&a=true"
+        "/images/vs10-numbering-emoji-1.png",
+        "/images/vs10-numbering-emoji-2.png"
       ],
       "info": null
     },
@@ -90,8 +90,8 @@
       "id": "vs11",
       "title": "赤いタイトルの間違い:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1225.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1226.PNG&x=3600&y=2338&a=true"
+        "/images/vs11-mistakes-red-title-1.png",
+        "/images/vs11-mistakes-red-title-2.png"
       ],
       "info": null
     },
@@ -99,8 +99,8 @@
       "id": "vs12",
       "title": "X-Emoji の間違い:",
       "images": [
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1225.PNG&x=3600&y=2338&a=true",
-        "https://nx73752.your-storageshare.de/apps/files_sharing/publicpreview/eWkEmENrtSXdG68?file=/IMG_1227.PNG&x=3600&y=2338&a=true"
+        "/images/vs12-mistakes-x-emoji-1.png",
+        "/images/vs12-mistakes-x-emoji-2.png"
       ],
       "info": null
     }

@@ -19,13 +19,13 @@ button, input, textarea, select, a {
 
 /* Table row hover */
 .table-row-hover:hover {
-  background-color: rgba(255, 120, 112, 0.05);
+  background-color: rgba(184, 115, 115, 0.06);
 }
 
 /* Custom checkbox styling */
 [data-state="checked"] {
-  background-color: #0F172A !important;
-  border-color: #0F172A !important;
+  background-color: #3D2C2C !important;
+  border-color: #3D2C2C !important;
 }
 
 /* Stepper connector line */
@@ -37,7 +37,7 @@ button, input, textarea, select, a {
 }
 
 .stepper-connector.completed {
-  background: linear-gradient(90deg, #0F172A 0%, #0F172A 100%);
+  background: linear-gradient(90deg, #3D2C2C 0%, #3D2C2C 100%);
 }
 
 /* Progress indicator */
@@ -55,13 +55,13 @@ button, input, textarea, select, a {
   left: 0;
   right: 0;
   height: 2px;
-  background: #FF7870;
+  background: #B87373;
   border-radius: 1px;
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(90deg, #FF7870 0%, #FF9A9E 100%);
+  background: linear-gradient(90deg, #B87373 0%, #C99B8E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -188,6 +188,6 @@ body {
 /* Better focus states for accessibility */
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid #FF7870;
+  outline: 2px solid #B87373;
   outline-offset: 2px;
 }
